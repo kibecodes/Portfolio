@@ -3,3 +3,4 @@ dist/
 .parcel-cache
 # Local Netlify folder
 .netlify
+README.md
