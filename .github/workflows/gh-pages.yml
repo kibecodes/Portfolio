@@ -39,3 +39,10 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Deploy to Netlify
+      - name: Netlify
+        run: |
+          netlify deploy --prod
+        env: 
+          NETLIFY_AUTH_TOKEN: ${{ secrets.MY_NETLIFY_AUTH_TOKEN }}
