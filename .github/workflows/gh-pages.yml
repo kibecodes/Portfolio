@@ -41,8 +41,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Deploy to Netlify
-      - name: Netlify
+      - name: Deploy to Netlify
         run: |
-          netlify deploy --prod d387a991-d285-4961-b439-5ebfbcfb3b19
+          netlify deploy --prod --site $NETLIFY_SITE_ID
         env: 
           NETLIFY_AUTH_TOKEN: ${{ secrets.MY_NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: d387a991-d285-4961-b439-5ebfbcfb3b19 
