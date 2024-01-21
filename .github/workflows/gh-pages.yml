@@ -43,6 +43,6 @@ jobs:
       # Deploy to Netlify
       - name: Netlify
         run: |
-          netlify deploy --prod
+          netlify deploy --prod d387a991-d285-4961-b439-5ebfbcfb3b19
         env: 
           NETLIFY_AUTH_TOKEN: ${{ secrets.MY_NETLIFY_AUTH_TOKEN }}
