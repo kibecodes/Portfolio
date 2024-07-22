@@ -31,7 +31,7 @@ jobs:
 
       # Build project
       - name: Build project
-        run:  parcel build src/index.html --out-dir project/dist
+        run:  parcel build src/index.html
         
       # Push to Github Pages
       - name: Github Pages
